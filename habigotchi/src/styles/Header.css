@@ -1,0 +1,13 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 60%;
+    text-align: center;
+    font-size: 70px;
+    font-style: bald;
+    background-color: #fff;
+}
