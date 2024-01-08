@@ -3,30 +3,39 @@
     background-color: rgba(255, 255, 255, 0.2);
     width: 20vw;
     padding: 10px;
-    margin-right: 3vw;
+    /* margin-right: 3vw; */
     text-align: center;
     font-size: 1.5vw;
     border-radius: 4px;
 }
 
 .containerNH {
+    background-color: #00980d;
     display: flex;
     float: right;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
+    margin-bottom: 50px;
+    width: 27vw;
+    height: 15vh;
 }
 
 .cont {
     display: flex;
     align-items: center;
-    width: 45vw;
+    justify-content: center;
+    /* width: 45vw; */
 }
 
 .button {
     text-align: center;
-    height: 4vh;
-    font-size: 1vw;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    font-size: 2vw;
     padding: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }

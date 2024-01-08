@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Habit from "./Habit";
 import NewHabit from "./NewHabit";
-// import "../styles/HabitList.css"
+import "../styles/HabitList.css"
 
 const HabitList = (props) => {
     let [habitUpdated, setHabitUpdated] = useState(false)

@@ -1,22 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/NewHabit.css"
 
-const NewHabit = (props) => {
-
+const NewHabit = ({ data }) => {
     const [habit, setHabit] = useState("")
 
-    const addHabit = () => {
-        localStorage.setItem(habit, 0)
-        setHabit = ''
+    let allHabits = []
+    let addedHabit = {}
+
+    const addHabit = (title) => {
+        addedHabit = {
+            isDidToday: false,
+            strike: 0,
+            name: habit,
+            timer: 0
+        }
+        // console.log(addedHabit, Date.now())
+        localStorage.setItem(Date.now(), JSON.stringify(addedHabit));
+        setHabit('')
+        data.setHabitUpdated(!data.habitUpdated)
     }
 
     return (
         <div className="containerNH">
             <div className="cont">
-                <input className="input" type="text" placeholder="Напиши сюда привычку" value={habit} onChange={e => setHabit(e.target.value)} />
-                <button className="button" onClick={addHabit}>Добавить</button>
+                <input className="input" type="text" value={habit} onChange={e => setHabit(e.target.value)} />
             </div>
-            {/* <h1>{localStorage.getItem()}</h1> */}
+            <button className="button" onClick={() => addHabit(habit)} > + </button>
         </div>
     )
 }
