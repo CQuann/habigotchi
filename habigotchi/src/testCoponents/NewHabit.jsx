@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 // import "../styles/NewHabit.css"
 
-const NewHabit = (props) => {
+const NewHabit = ({data}) => {
     const [habit, setHabit] = useState("")
 
     let allHabits = []
@@ -16,13 +16,15 @@ const NewHabit = (props) => {
         }
         // console.log(addedHabit, Date.now())
         localStorage.setItem(Date.now(), JSON.stringify(addedHabit));
+        setHabit('')
+        data.setHabitUpdated(!data.habitUpdated)
     }
 
 
 
     return (
         <div className="container">
-            <input type="text" onChange={e => setHabit(e.target.value)} />
+            <input type="text" value={habit} onChange={e => setHabit(e.target.value)} />
             <button onClick={() => addHabit({})}>
                 +++
             </button>
