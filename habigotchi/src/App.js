@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import './styles/App.css'
 import Header from './components/Header';
-import NewHabit from './components/NewHabit';
+import NewHabit from './testCoponents/NewHabit';
+import HabitList from './testCoponents/HabitList';
 
 function App() {
 
   return (
-    <div className='App'>
-      <Header>
-        Добро пожаловать!
-      </Header>
-      <NewHabit />
+    <div>
+      <HabitList />
     </div>
   )
 }
