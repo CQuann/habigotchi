@@ -7,10 +7,13 @@
 #root {
     display: flex;
     justify-content: center;
+    background-color: #b8b8b8;
 }
 
 .App {
-    width: 70%;
-    height: 100vh;
-    background-color: #bdbdbd;
+    width: 80vw;
+    min-height: 100vh;
+    height: 100%;
+    background-color: #4f4f4f;
+    padding-bottom: 100px;
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../styles/NewHabit.css"
+import classes from "../styles/NewHabit.module.css"
 
 const NewHabit = ({ data }) => {
     const [habit, setHabit] = useState("")
@@ -21,11 +21,11 @@ const NewHabit = ({ data }) => {
     }
 
     return (
-        <div className="containerNH">
-            <div className="cont">
-                <input className="input" type="text" value={habit} onChange={e => setHabit(e.target.value)} />
+        <div className={classes.containerNH}>
+            <div className={classes.cont}>
+                <input className={classes.input} type="text" value={habit} onChange={e => setHabit(e.target.value)} />
+                <button className={classes.button} onClick={() => addHabit(habit)} > + </button>
             </div>
-            <button className="button" onClick={() => addHabit(habit)} > + </button>
         </div>
     )
 }

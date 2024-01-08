@@ -6,7 +6,7 @@ import HabitList from './components/HabitList';
 function App() {
 
   return (
-    <div>
+    <div className='App'>
       <Header>Привычки</Header>
       <HabitList />
     </div>
