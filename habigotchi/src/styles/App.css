@@ -2,18 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Rubik Doodle Shadow;
 }
 
 #root {
     display: flex;
     justify-content: center;
-    background-color: #b8b8b8;
+    background-image: url("../components/Background.png");
+    background-size: 100% 100%
 }
 
 .App {
-    width: 80vw;
+    margin: 0 0 50px 0;
+    width: 70vw;
     min-height: 100vh;
-    height: 100%;
-    background-color: #4f4f4f;
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(255, 255, 255, 0.3);
     padding-bottom: 100px;
 }

@@ -14,7 +14,6 @@ const NewHabit = ({ data }) => {
             name: habit,
             timer: 0
         }
-        // console.log(addedHabit, Date.now())
         localStorage.setItem(Date.now(), JSON.stringify(addedHabit));
         setHabit('')
         data.setHabitUpdated(!data.habitUpdated)
@@ -23,7 +22,7 @@ const NewHabit = ({ data }) => {
     return (
         <div className={classes.containerNH}>
             <div className={classes.cont}>
-                <input className={classes.input} type="text" value={habit} onChange={e => setHabit(e.target.value)} />
+                <input placeholder="Напиши сюда свою привычку!" className={classes.input} type="text" value={habit} onChange={e => setHabit(e.target.value)} />
                 <button className={classes.button} onClick={() => addHabit(habit)} > + </button>
             </div>
         </div>

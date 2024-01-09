@@ -25,7 +25,6 @@ const HabitList = (props) => {
                 <div className={classes.containerList}>
                     {allHabits.map(habit =>
                         <div className={classes.habitElinerContainer}>
-                            {console.log(habit)}
                             <Habit habitData={habit} updated={{ setHabitUpdated, habitUpdated }} />
                             <div className={classes.eliner}></div>
                         </div>)

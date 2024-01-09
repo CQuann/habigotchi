@@ -11,18 +11,51 @@
     font-size: 2vw;
 }
 
-.didTodayContF button {
-    padding: 2vh 2vw;
-    background-color: #ff0000;
+.didTodayContF {
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #aaffb4;
 }
 
-.didTodayContT button {
-    padding: 2vh 2vw;
-    background-color: #00ff1e;
+.didTodayContF:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    transition: box-shadow 0.3s;
 }
 
-.delCont button {
-    padding: 2vh 2vw;
+.didTodayContT {
+    padding: 15px;
+    background-color: #4cff61;
+    border-radius: 50%;
 }
 
-.strikeCont {}
+.delCont {
+    padding: 10px;
+    background-color: transparent;
+}
+
+.check {
+    width: 3vw;
+}
+
+.unCheck {
+    width: 3vw;
+}
+
+.bin {
+    width: 3vw;
+    border-radius: 50%;
+}
+
+.bin:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    transition: box-shadow 0.3s;
+}
+
+.strikeCont {
+    width: 5vw;
+    text-align: center;
+}
+
+.strike {
+    font-size: 2vw;
+}
