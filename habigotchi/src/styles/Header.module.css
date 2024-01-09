@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: #028700bd;
+    border-radius: 0 0 30px 30px;
+}
+
+.iconsCont {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20vw;
+}
+
+.block {
+    width: 1fr;
+}
+
+.logo {
+    height: 100px;
+    margin-right: 15.5vw;
+    margin-left: 20px;
+}
+
+.habitsIcon {
+    height: 70px;
+}
+
+.gameIcon {
+    height: 70px;
+}
+
+.tamagochiIcon {
+    height: 70px;
+}
+
+.eliner {
+    height: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.iconsElinCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90px;
+    width: 20vw;
+    justify-items: center;
+}
